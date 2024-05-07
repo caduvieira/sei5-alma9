@@ -17,6 +17,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        repository: processoeletronico/sei5-alpine
+        repository: processoeletronico/sei5-alma9
         short-description: ${{ github.event.repository.description }}
         enable-url-completion: true
