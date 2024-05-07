@@ -6,4 +6,4 @@ Essa imagem serve somente para MySQL, MariaDB e Postgres.
 
 Bancos de oracle e sqlserver não tem suporte.
 
-Cron não instalado.
+Cron não instalado. TODO
