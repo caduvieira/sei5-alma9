@@ -93,5 +93,10 @@ RUN localedef pt_BR -i pt_BR -f ISO-8859-1 ; \
     localedef pt_BR.ISO-8859-1 -i pt_BR -f ISO-8859-1 ; \
     localedef pt_BR.ISO8859-1 -i pt_BR -f ISO-8859-1
 
+ADD assets/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
 EXPOSE 8000
 CMD ["bash", "-c", "php-fpm && httpd -DFOREGROUND"]
